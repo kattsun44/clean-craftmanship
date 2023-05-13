@@ -15,4 +15,10 @@ public class AppTest {
     public void shouldAnswerWithTrue() {
         assertTrue(true);
     }
+
+    public class StackTest {
+        @Test
+        public void nothing() throws Exception {
+        }
+    }
 }
