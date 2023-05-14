@@ -18,7 +18,7 @@ public class Stack {
         if (size == 0)
             throw new Underflow();
         --size;
-        return -1;
+        return 99;
     }
 
     public int getSize() {
