@@ -22,10 +22,11 @@ public class PrimeFactorsTest {
         ArrayList<Integer> factors = new ArrayList<>();
         if (n > 1) {
             if (n % 2 == 0) {
-                factors.add(n);
+                factors.add(2);
                 n /= 2;
             }
-            factors.add(n);
+            if (n > 1)
+                factors.add(n);
         }
         return factors;
     }
