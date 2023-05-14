@@ -2,6 +2,7 @@ package com.example;
 
 public class Stack {
     private int size = 0;
+    private int element;
 
     public class Underflow extends RuntimeException {
     }
@@ -12,13 +13,14 @@ public class Stack {
 
     public void push(int element) {
         size++;
+        this.element = element;
     }
 
     public int pop() {
         if (size == 0)
             throw new Underflow();
         --size;
-        return 99;
+        return element;
     }
 
     public int getSize() {
