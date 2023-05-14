@@ -12,6 +12,7 @@ public class Stack {
     }
 
     public int pop() {
+        empty = true;
         return -1;
     }
 }
