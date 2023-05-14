@@ -14,6 +14,7 @@ public class PrimeFactorsTest {
     public void factors() throws Exception {
         assertThat(factorsOf(1), is(empty()));
         assertThat(factorsOf(2), contains(2));
+        assertThat(factorsOf(3), contains(3));
     }
 
     private List<Integer> factorsOf(int n) {
