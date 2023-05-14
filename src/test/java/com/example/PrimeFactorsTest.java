@@ -21,6 +21,7 @@ public class PrimeFactorsTest {
         assertThat(factorsOf(7), contains(7));
         assertThat(factorsOf(8), contains(2, 2, 2));
         assertThat(factorsOf(9), contains(3, 3));
+        assertThat(factorsOf(10), contains(2, 5));
     }
 
     private List<Integer> factorsOf(int n) {
