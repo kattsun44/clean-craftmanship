@@ -1,5 +1,6 @@
 package com.example;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
@@ -21,5 +22,12 @@ public class StackTest {
         stack.push(0);
         stack.pop();
         assertTrue(stack.isEmpty());
+    }
+
+    @Test
+    public void afterTwoPushes_sizeIsTwo() throws Exception {
+        stack.push(0);
+        stack.push(0);
+        assertEquals(2, stack.getSize());
     }
 }
