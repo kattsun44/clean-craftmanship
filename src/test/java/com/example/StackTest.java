@@ -19,6 +19,7 @@ public class StackTest {
     @Test
     public void afterOnePush_isNotEmpty() throws Exception {
         stack.push(0);
-        assertFalse(stack.isEmpty());
+        stack.pop();
+        assertTrue(stack.isEmpty());
     }
 }
