@@ -9,15 +9,15 @@ import org.junit.Test;
  * Unit test for simple Stack.
  */
 public class StackTest {
+    private Stack stack = new Stack();
+
     @Test
     public void canCreateStack() throws Exception {
-        Stack stack = new Stack();
         assertTrue(stack.isEmpty());
     }
 
     @Test
-    public void canPush() throws Exception {
-        Stack stack = new Stack();
+    public void afterOnePush_isNotEmpty() throws Exception {
         stack.push(0);
         assertFalse(stack.isEmpty());
     }
