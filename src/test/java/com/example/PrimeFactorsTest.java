@@ -15,6 +15,6 @@ public class PrimeFactorsTest {
     }
 
     private List<Integer> factorsOf(int n) {
-        return null;
+        return new ArrayList<>();
     }
 }
