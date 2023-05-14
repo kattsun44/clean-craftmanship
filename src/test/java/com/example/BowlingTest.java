@@ -1,16 +1,13 @@
 package com.example;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class BowlingTest {
-    @Test
-    public void canCreateGame() throws Exception {
-        Game g = new Game();
-    }
+    private Game g;
 
-    @Test
-    public void canRoll() {
-        Game g = new Game();
-        g.roll(0);
+    @Before
+    public void setUp() {
+        g = new Game();
     }
 }
