@@ -20,6 +20,13 @@ public class StackTest {
     @Test
     public void afterOnePush_isNotEmpty() throws Exception {
         stack.push(0);
+        assertFalse(stack.isEmpty());
+        assertEquals(1, stack.getSize());
+    }
+
+    @Test
+    public void afterOnePushAndOnePop_isEmpty() throws Exception {
+        stack.push(0);
         stack.pop();
         assertTrue(stack.isEmpty());
         assertEquals(0, stack.getSize());
@@ -30,5 +37,10 @@ public class StackTest {
         stack.push(0);
         stack.push(0);
         assertEquals(2, stack.getSize());
+    }
+
+    @Test(expected = Stack.Underflow.class)
+    public void poppingEmptyStack_throwsUnderflow() throws Exception {
+        stack.pop();
     }
 }

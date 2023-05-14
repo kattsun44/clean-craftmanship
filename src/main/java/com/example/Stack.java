@@ -3,6 +3,9 @@ package com.example;
 public class Stack {
     private int size = 0;
 
+    public class Underflow extends RuntimeException {
+    }
+
     public boolean isEmpty() {
         return size == 0;
     }
